@@ -1,0 +1,13 @@
+
+<%= form_tag new_student_path do %>
+<fieldset>
+  <legend>Student Form</legend>
+<label>First Name:
+<%= text_field_tag :'student[first_name]'%>
+</label>
+<label>Last Name:
+<%= text_field_tag :'student[last_name]'%>
+</label>
+<%= submit_tag "Submit" %>
+</fieldset>
+<% end %>
